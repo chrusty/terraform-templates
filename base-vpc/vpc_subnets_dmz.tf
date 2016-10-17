@@ -5,10 +5,9 @@ resource "aws_subnet" "dmz-az-0" {
   availability_zone = "${var.azs[0]}"
 
   tags {
-    Name              = "dmz.${var.azs[0]}.i.${var.dns["domain_name"]}"
-    role              = "dmz"
-    environment       = "${var.environment_name}"
-    KubernetesCluster = "k8s.${var.dns["domain_name"]}"
+    Name        = "dmz.${var.azs[0]}.i.${var.dns["domain_name"]}"
+    role        = "dmz"
+    environment = "${var.environment_name}"
   }
 }
 
@@ -19,10 +18,9 @@ resource "aws_subnet" "dmz-az-1" {
   availability_zone = "${var.azs[1]}"
 
   tags {
-    Name              = "dmz.${var.azs[1]}.i.${var.dns["domain_name"]}"
-    role              = "dmz"
-    environment       = "${var.environment_name}"
-    KubernetesCluster = "k8s.${var.dns["domain_name"]}"
+    Name        = "dmz.${var.azs[1]}.i.${var.dns["domain_name"]}"
+    role        = "dmz"
+    environment = "${var.environment_name}"
   }
 }
 
@@ -33,10 +31,9 @@ resource "aws_subnet" "dmz-az-2" {
   availability_zone = "${var.azs[2]}"
 
   tags {
-    Name              = "dmz.${var.azs[2]}.i.${var.dns["domain_name"]}"
-    role              = "dmz"
-    environment       = "${var.environment_name}"
-    KubernetesCluster = "k8s.${var.dns["domain_name"]}"
+    Name        = "dmz.${var.azs[2]}.i.${var.dns["domain_name"]}"
+    role        = "dmz"
+    environment = "${var.environment_name}"
   }
 }
 
